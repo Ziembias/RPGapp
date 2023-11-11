@@ -1,0 +1,40 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(184, 169, 198);
+    min-height: 100px;
+    width: 100%;
+}
+
+.area1{
+    max-width: fit-content;
+    text-align: start;
+    height: 100%;
+}
+.nazwa1{
+    max-width: fit-content;
+    height: 100%;
+}
+
+.nazwa{
+    text-align: center;
+    margin-inline:10px ;
+}
+
+.nazwa1, .area1{
+    text-align: center;
+    width: auto;
+}
+.KartaPostaci{
+    align-items: start;
+    margin-right: 3px;
+    width: 20%;
+    padding-left: 100px;
+}
+.reszta{
+    width: 80%;
+    display: flex;
+    margin-right: 15px;
+    
+}
