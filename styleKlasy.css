@@ -1,0 +1,55 @@
+.buttonClass{
+    width: 90%;
+    background-color: lightslategray;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+p{
+    margin: 1em;
+}
+
+.smallMTop{
+    margin: 5px;
+    font-size: 16px;
+}
+
+.borderBottom{
+    border-bottom: 1px solid black;
+}
+
+.inputGold{
+    width: 33%;
+}
+
+.mediumPVertical{
+    padding: 25px 0;
+}
+
+.largeMTop{
+    margin-top: 35px;
+}
+
+.marginAroundLi > li{
+    margin: 10px 0;
+}
+
+#classChangePopup{
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.show{
+    display: flex !important;
+}
+
+select{
+    width: 90%;
+}
