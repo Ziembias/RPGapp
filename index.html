@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG</title>
     <link rel="stylesheet" href="stylestatys.css">
 </head>
+
 <body>
     <nav style="background-color: red; min-height: 40px; width: 100%"></nav>
     <div style="display: flex;">
-       
+        <div style="display: flex; flex-direction: column; width: 100%">
             <div class="divStats">
-                <div class="divColumn" >
-                    
+                <div class="divColumn">
                     <div class="statContainter">
                         <div class="stats">str</div>
-                        <input type="number"/>
-                    
+                        <input type="number" />
                     </div>
                     <div class="statContainter">
                         <div class="stats">kondycja</div>
-                        <input type="number"/>
+                        <input type="number" />
                     </div>
                     <div class="statContainter">
                         <div class="stats">wola</div>
-                        <input type="number"/>
+                        <input type="number" />
                     </div>
                 </div>
-                <div class="divColumn" >
+
+                <div class="divColumn">
                     <div class="statContainter">
                         <div class="stats">siła</div>
-                        <input type="number"/>
+                        <input type="number" />
                     </div>
                     <div class="statContainter">
                         <div class="stats">zreczność</div>
-                        <input type="number"/>
+                        <input type="number" />
                     </div>
                     <div class="statContainter">
                         <div class="stats">charyzma</div>
-                        <input type="number"/>
-                    
+                        <input type="number" />
                     </div>
-                    <div class="statContainter">
-                        <div class="stats">percepcja</div>
-                        <input type="number"/>
-                    </div>
-                    
+                </div>
+
+                <div class="divColumn">
+                    <h2>Słabości/statusy</h2>
+                    <ul class="listStyle">
+                        <li>Słabośći</li>
+                        <li>Statusy</li>
+                        <li>TAK</li>
+                    </ul>
                 </div>
             </div>
-        
-    <div style="width: 30%; background-color: yellow; height: 100vh; display: flex; flex-direction: column;">
-        <div style="background-color: green; height: 50%;"></div>
-        <div style="background-color: aqua; height: 50%;"></div>
+            <div class="divStats listStyle">
+                <div class="divColumn listStyle">
+                    <ul class="listStyle">
+                        <li>Słabości</li>
+                        <li>brak ręki</li>
+                        <li>żarłol</li>
+                    </ul>
+                </div>
+                <div class="divColumn listStyle">   
+                    <ul class="listStyle">
+                        <li>Statusy</li>
+                        <li>nieśmiertelny</li>
+                        <li>niewidzialny</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+
+        <div style="width: 30%; background-color: yellow; height: 100vh; display: flex; flex-direction: column;">
+            <div style="background-color: green; height: 50%;"></div>
+            <div style="background-color: aqua; height: 50%;"></div>
+        </div>
     </div>
 </body>
+
 </html>
