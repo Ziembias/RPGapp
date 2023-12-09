@@ -58,27 +58,108 @@
                     </ol>
                 </div>
             </div>
+            <div style="display: flex; flex-direction: column; align-items: center; width: 100%" class="mediumPVertical">
+                <div>Pancerz: 12</div>
+                <div>Obrażenia: 20</div>
+                <div>Unik: 4</div>
+            </div>
         </div>
     </div>
 
 
     <div id="classChangePopup">
-        <div style="width: 75%; background-color: red;">
+        <div style="width: 75%; overflow-y: scroll;">
+            <div>
+                <div style="background-color: lightgray">
+                    <button style="width: 100%" value="categoryMagiczne" class="rollUpButton" onclick="handleRollUpClick(this.value)">
+                        <h2>Magiczne</h2>
+                    </button>
+                </div>
+                <div id="categoryMagiczne" class="mediumPVertical classOptionsHolder">
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa1</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa2</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa3</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa4</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa5</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa6</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa7</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa8</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa9</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa10</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa11</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa12</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa13</div>
+                </div>
+            </div>
+
+            <div>
+                <div style="background-color: lightgray">
+                    <button style="width: 100%" value="categoryPolmagiczne" class="rollUpButton" onclick="handleRollUpClick(this.value)">
+                        <h2>Pół-magiczne<h2>
+                    </button>
+                </div>
+                <div id="categoryPolmagiczne" class="mediumPVertical classOptionsHolder">
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa1</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa2</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa3</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa4</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa5</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa6</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa7</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa8</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa9</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa10</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa11</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa12</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa13</div>
+                </div>
+            </div>
+
+            <div>
+                <div style="background-color: lightgray">
+                    <button style="width: 100%" value="categoryNiemagiczne" class="rollUpButton" onclick="handleRollUpClick(this.value)">
+                        <h2>Niemagiczne<h2>
+                    </button>
+                </div>
+                <div id="categoryNiemagiczne" class="mediumPVertical classOptionsHolder">
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa1</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa2</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa3</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa4</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa5</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa6</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa7</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa8</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa9</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa10</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa11</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa12</div>
+                    <div class="classOptionBox" onclick="handleClassOptionSelect(this)">klasa13</div>
+                </div>
+            </div>
         </div>
-        <div style="width: 25%">
-            <div style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between">
-                <div style="margin: auto;">
+        <div style="width: 25%; border-left: solid black 2px;" class="mediumPVertical">
+            <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center;">
+                <div style="height: 50%">
+                    <h4>Informacje o wybranej klasie:</h4>
+
+                    <p id="classInfoHolder"></p>
+                </div>
+                <div style="width: 100%; height: 50%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
                     <p>Wybierz podklasę po zmianie</p>
-                    <select>
-                        <option>--</option>
+                    <select id="selectSecondaryClassChoice">
+                        <option value="">--</option>
                         <option>Główna</option>
                         <option>Podklasa</option>
                     </select>
+                    <button type="button" onclick="saveClassChange()">Zapisz zmianę</button>
                 </div>
-                <button type="button" onclick="saveClassChange()">Zapisz zmianę</button>
             </div>
         </div>
     </div>
+
+
+
     <script src="scriptFilip.js"></script>
 </body>
 </html>

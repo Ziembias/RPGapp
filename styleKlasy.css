@@ -42,8 +42,9 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: aquamarine;
+    background-color: white;
     text-align: center;
+    border: solid black 2px;
 }
 
 .show{
@@ -52,4 +53,30 @@ p{
 
 select{
     width: 90%;
+}
+
+.classOptionsHolder{
+    display: none; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center;
+}
+
+.classOptionBox{
+    aspect-ratio: 1/1;
+    width: 10%;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classOptionBox:hover{
+    border-color: gold;
+    color: gold;
+}
+
+.classOptionBox-selected{
+    border-color: blue;
+    color: blue;
 }
