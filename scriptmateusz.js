@@ -9,28 +9,28 @@ function  showEkwipunek(){
 }
 
 
-const arr = ["nazwa","opis","działanie","typ","waga"]
+const arr = ["Nazwa","Opis","Działanie","Typ","Waga"]
 
-function dodajwiersz(tabelka) {
+function dodajwiersz() {
     tabelka = document.getElementById("tabelka");
     var NowyWiersz = tabelka.insertRow();
        komórka1 = NowyWiersz.insertCell(0);
+       komórka1 = document.createAttribute('Nazwa');
        komórka2 = NowyWiersz.insertCell(1);
+       komórka2 = document.createAttribute('Opis');
        komórka3 = NowyWiersz.insertCell(2);
+       komórka3 = document.createAttribute('Działanie');
        komórka4 = NowyWiersz.insertCell(3);
-       komórka5 = NowyWiersz.insertCell(4);    
+       komórka4 = document.createAttribute('Typ');
+       komórka5 = NowyWiersz.insertCell(4);  
+       komórka5 = document.createAttribute('Waga');  
     }
 
-var tr = require('tr');
-
-function usunwiersz1(tabelka) {
-    tabelka = document.getElementById("tabelka");
-    var Usunwiersz = document.remove('tr');
-    komórka1 = Usunwiersz.removeCell(0);
-    komórka2 = Usunwiersz.removeCell(1);
-    komórka3 = Usunwiersz.removeCell(2);
-    komórka4 = Usunwiersz.removeCell(3);
-    komórka5 = Usunwiersz.removeCell(4);
+function usunwiersz1() {
+    if (NowyWiersz) {
+        "tabelka" - "Nazwa" - "Opis" - "Działanie" - "typ" - "waga"
+    }
+    else{
+        null
+    }
 }
-
-
