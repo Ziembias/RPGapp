@@ -27,8 +27,9 @@ function dodajwiersz() {
     }
 
 function usunwiersz1() {
+    
     if (NowyWiersz) {
-        "tabelka" - "Nazwa" - "Opis" - "Działanie" - "typ" - "waga"
+       let NowyWiersz = "tabelka" - "Nazwa" - "Opis" - "Działanie" - "typ" - "waga"
     }
     else{
         null
