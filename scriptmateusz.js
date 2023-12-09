@@ -22,26 +22,11 @@ for(let row of tableRows){
 function dodajwiersz() {
     tabelka = document.getElementById("tabelka");
     let NowyWiersz = tabelka.insertRow();
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < 6; i++){
         NowyWiersz.insertCell(i)
     }
-
-    
-
-    // komórka1 = NowyWiersz.insertCell(0);
-    // // komórka1 = document.createAttribute('Nazwa');
-    // komórka2 = NowyWiersz.insertCell(1);
-    // // komórka2 = document.createAttribute('Opis');
-    // komórka3 = NowyWiersz.insertCell(2);
-    // // komórka3 = document.createAttribute('Działanie');
-    // komórka4 = NowyWiersz.insertCell(3);
-    // // komórka4 = document.createAttribute('Typ');
-    // komórka5 = NowyWiersz.insertCell(4);  
-    // komórka5 = document.createAttribute('Waga'); 
-
     NowyWiersz.addEventListener('click', usunwiersz);
 }
-
 
 
 function usunwiersz(event) {
@@ -52,4 +37,11 @@ function usunwiersz(event) {
 
 function zmianaTrybuUsuwania(){
     jestTrybUsuwania = !jestTrybUsuwania;
+    document.getElementsByTagName("tr");
+    let borders = document.getElementsByTagName("td");
+    console.log(borders)
+    for(let border of borders ) {
+        console.log(border)
+        border.style.borderColor = jestTrybUsuwania ? "red" : "Black";
+    }
 }

@@ -11,12 +11,13 @@
 <body>
     <nav class="nav">
         <div class="KartaPostaci">
-            <a class="hdh">Karta Postaci</a>
+            <img src=grf\4416844.jpg>
+            <span class="hdh">Karta Postaci</span>
         </div>
         <div class="reszta">
-            <label class="nazwa">Imię Gracza </a><input class="area1"></input></label>
-            <label class="nazwa">Imię Postaci </a><input class="area1"></input></label>
-            <label class="nazwa">Rasa </a><select class="nazwa1">
+            <label class="nazwa"><span class="hdh">Imię Gracza</span><input class="area1"></input></label>
+            <label class="nazwa"><span class="hdh">Imię Postaci</span><input class="area1"></input></label>
+            <label class="nazwa"><span class="hdh">Rasa</span><select class="nazwa1">
                     <ul>
                         <option> </option>
                         <option>Człowiek</option>
@@ -31,7 +32,7 @@
                     </ul>
                 </select>
             </label>
-            <label class="nazwa">Pochodzenie </a><select class="nazwa1">
+            <label class="nazwa"><span class="hdh">Pochodzenie</span><select class="nazwa1">
                     <ul>
                         <option> </option>
                         <option>Slamsy</option>
@@ -65,46 +66,52 @@
     <P>Waga przedmiotów</P><input class="waga" type="number"></input>
     <p>Maksymalna Waga</p>
 </div>
-<div class="adew">
+<div class="adew" id="EQ">
     <button class="przycisk" onclick="zmianaTrybuUsuwania()" id="delate">Usuń przedmiot</button>
     <table class="tabeleczka" id="tabelka">
         <tr>
-            <td>Nazwa przedmiotu1</td>
+            <td> Ilość </td>
+            <td> Nazwa przedmiotu1 </td>
             <td> opis </td>
             <td> działania </td>
             <td> typ </td>
             <td> waga </td>
         </tr>
         <tr>
-            <td>Nazwa przedmiotu2</td>
+            <td> Ilość </td>
+            <td> Nazwa przedmiotu2 </td>
             <td> opis </td>
             <td> działania </td>
             <td> typ </td>
             <td> waga </td>
         </tr>
         <tr>
-            <td>Nazwa przedmiot3</td>
+            <td> Ilość </td>
+            <td> Nazwa przedmiot3 </td>
             <td> opis </td>
             <td> działania </td>
             <td> typ </td>
             <td> waga </td>
         </tr>
         <tr>
-            <td>Nazwa przedmiotu4</td>
+            <td> Ilość </td>
+            <td> Nazwa przedmiotu4 </td>
             <td> opis </td>
             <td> działania </td>
             <td> typ </td>
             <td> waga </td>
         </tr>
         <tr>
-            <td>Nazwa przedmiotu5</td>
+            <td> Ilość </td>
+            <td> Nazwa przedmiotu5 </td>
             <td> opis </td>
             <td> działania </td>
             <td> typ </td>
             <td> waga </td>
         </tr>
         <tr>
-            <td>Nazwa przedmiotu</td>
+            <td> Ilość </td>
+            <td> Nazwa przedmiotu6 </td>
             <td> opis </td>
             <td> działania </td>
             <td> typ </td>
@@ -113,7 +120,33 @@
     </table>
     <button class="przycisk" onclick="dodajwiersz()">Dodaj Przedmiot</button>
 </div>
+<div id="dodanieprzedmiotu">
+   <table>
+    <tr>
+        <td> 3 </td>
+        <td> Mikstira Zdrowia Wysoka Jakość </td>
+        <td> Wysokiej jakości mikstura przywracająca zdrowie </td>
+        <td> +1D8 HP </td>
+        <td> 1,5kg </td>
+    </tr>
+    <tr>
+        <td> 1 </td>
+        <td> Trucizna Wysoka Jakość </td>
+        <td> Wysokiej jakości Trucizna, przydaje się do zatruwania posiłków i broni </td>
+        <td> -1D8 HP </td>
+        <td> 0,5kg </td>
+    </tr>
+    <tr>
+        <td> 22 </td>
+        <td> Strzały </td>
+        <td> Zwykłej jakości strzały </td>
+        <td> ------- </td>
+        <td> 2,2kg </td>
+    </tr>
+   </table>
 </div>
+</div>
+
 
 
 
