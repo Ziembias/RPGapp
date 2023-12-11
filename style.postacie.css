@@ -136,3 +136,7 @@ img{
     width: inherit;
     height: inherit;
 }
+
+.dodanieprzedmiotu{
+    display: none;
+}
